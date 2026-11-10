@@ -34,7 +34,7 @@ export const proyectos: Proyecto[] = [
       "Pagos con Mercado Pago y tests con Vitest y Playwright.",
     ],
     stack: ["Next.js", "React", "TypeScript", "Tailwind", "PostgreSQL", "Prisma", "Supabase", "Mercado Pago", "Vercel"],
-    video: "", // cuando tengas el video: "/proyectos/karta/demo.mp4" (archivo en public/proyectos/karta/)
+    video: "/proyectos/karta/demo.mp4",
     imagenes: [
       // { src: "/proyectos/karta/carta-qr.png", alt: "Carta digital desde el celular" },
       // { src: "/proyectos/karta/panel-mozo.png", alt: "Panel del mozo" },
@@ -48,20 +48,19 @@ export const proyectos: Proyecto[] = [
     tipo: "Cliente · E-commerce",
     anio: "",
     resumen:
-      "Tienda online de marroquinería hecha en WooCommerce. Me encargo del mantenimiento y de las funciones a medida que va necesitando el negocio.",
-    rol: "Desarrollo y mantenimiento de la tienda.",
+      "Tienda online de una marroquinería de Santa Fe, con más de 180 productos entre valijas, mochilas y accesorios de viaje. Hice el desarrollo completo: la tienda, un sistema de gestión interno a medida, reglas de pagos y envíos, y la optimización de velocidad y SEO.",
+    rol: "Desarrollo completo de la tienda y del sistema de gestión.",
     puntos: [
-      "Hice una auditoría del WordPress para ordenar lo que había y detectar problemas.",
-      "Armé un panel para que el cliente cambie los banners sin tocar código.",
-      "Agregué validación de zonas de envío y un selector de colores con imagen para cada producto.",
-      "Desarrollé un control de stock con egresos de mercadería, listado diario, reporte de ventas y valorización del stock.",
-      "Trabajo siempre primero en una copia de staging y después paso los cambios a producción.",
+      "Sistema de gestión de inventario a medida dentro del panel de WordPress, con unos 28 módulos: productos, rubros, proveedores, ingresos, egresos, remitos en PDF, y reportes de ventas y valorización de stock, conectado a WooCommerce.",
+      "Checkout a medida: validación de zonas de envío, cuotas sin interés calculadas en cada producto y descuentos según el medio de pago (transferencia, GoCuotas, Payway, Mercado Pago).",
+      "Optimización de velocidad y SEO de la tienda.",
     ],
-    stack: ["WordPress", "WooCommerce", "PHP", "JavaScript", "MySQL"],
+    stack: ["WordPress", "WooCommerce", "PHP", "JavaScript", "MySQL", "LiteSpeed"],
     links: [{ label: "kueross.com", href: "https://kueross.com" }],
     imagenes: [
-      // { src: "/proyectos/kueross/tienda.png", alt: "Tienda online" },
-      // { src: "/proyectos/kueross/stock.png", alt: "Control de stock" },
+      { src: "/proyectos/kueross/home.png", alt: "Inicio de la tienda con el slider de banners" },
+      { src: "/proyectos/kueross/tienda.png", alt: "Listado de productos con filtros por categoría y precio" },
+      { src: "/proyectos/kueross/producto.png", alt: "Ficha de producto con selector de color" },
     ],
   },
   {
