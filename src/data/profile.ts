@@ -12,8 +12,8 @@ export const profile = {
 export const stack: { grupo: string; items: string[] }[] = [
   { grupo: "Frontend", items: ["React", "Next.js", "TypeScript", "Tailwind CSS"] },
   { grupo: "Backend", items: ["PHP", "Symfony", "Node.js", "APIs REST", "WebSockets"] },
-  { grupo: "Base de datos", items: ["PostgreSQL", "Prisma", "Doctrine", "Supabase", "SQL"] },
+  { grupo: "Base de datos", items: ["PostgreSQL", "Doctrine", "Supabase", "SQL"] },
   { grupo: "CMS / E-commerce", items: ["WordPress", "WooCommerce"] },
   { grupo: "Datos / BI", items: ["Metabase"] },
-  { grupo: "Herramientas", items: ["Git", "Vercel", "Vitest", "Playwright"] },
+  { grupo: "Herramientas", items: ["Git", "Vercel"] },
 ];

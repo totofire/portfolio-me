@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { ArrowUpRight, Check } from "lucide-react";
 import type { Proyecto } from "@/data/projects";
+import { ProjectGallery } from "./ProjectGallery";
 
 export function ProjectCard({ proyecto: p, index }: { proyecto: Proyecto; index: number }) {
   const imagenes = p.imagenes ?? [];
@@ -61,33 +61,7 @@ export function ProjectCard({ proyecto: p, index }: { proyecto: Proyecto; index:
       </div>
 
       {/* Galería */}
-      {imagenes.length > 0 && (
-        <div className="mt-8">
-          <div className="grid gap-3 sm:grid-cols-2">
-            {imagenes.map((img) => (
-              <a
-                key={img.src}
-                href={img.src}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative block aspect-[16/10] overflow-hidden rounded-lg border border-line bg-ink"
-              >
-                <Image
-                  src={img.src}
-                  alt={img.alt}
-                  fill
-                  sizes="(min-width: 768px) 480px, 100vw"
-                  className="object-cover object-top transition duration-300 group-hover:scale-[1.02]"
-                />
-                <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent px-3 pb-2 pt-6 text-xs text-neutral-200">
-                  {img.alt}
-                </span>
-              </a>
-            ))}
-          </div>
-          {p.nota && <p className="mt-3 font-mono text-xs text-muted">* {p.nota}</p>}
-        </div>
-      )}
+      <ProjectGallery imagenes={imagenes} nombre={p.nombre} nota={p.nota} />
 
       {/* Stack */}
       <ul className="mt-8 flex flex-wrap gap-2 border-t border-line pt-6">
