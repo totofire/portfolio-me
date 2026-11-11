@@ -41,11 +41,10 @@ export function Hero() {
           {profile.cv && (
             <a
               href={profile.cv}
-              target="_blank"
-              rel="noopener noreferrer"
+              download="CV-Tomas-Fernandez.pdf"
               className="inline-flex items-center gap-2 rounded-md border border-line px-5 py-2.5 text-sm transition hover:border-neutral-500"
             >
-              <FileText size={16} /> CV
+              <FileText size={16} /> Descargar CV
             </a>
           )}
         </div>

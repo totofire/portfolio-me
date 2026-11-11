@@ -6,7 +6,7 @@ export const profile = {
   bio: "Soy desarrollador full stack. Trabajo en el Ministerio de Obras Públicas de Santa Fe haciendo sistemas internos y en paralelo armo Karta, un sistema para restaurantes. También hago trabajos para clientes con WordPress y WooCommerce.",
   email: "tomasfernandezz278@gmail.com",
   linkedin: "https://www.linkedin.com/in/tomas-fernandez-dev/",
-  cv: "", // ej: "/cv-tomas-fernandez.pdf" — vacío = no se muestra el botón
+  cv: "/cv-tomas-fernandez.pdf", // vacío = no se muestra el botón
 };
 
 export const stack: { grupo: string; items: string[] }[] = [
